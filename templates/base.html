@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>ECL - English classes online</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ecl.css' %}" />
+    {% block header %}{% endblock %}
+</head>
+<body>
+    <img src="/static/images/banner.jpg" alt="Logo" name="logo" id="logo">
+        {% block content %}{% endblock %}
+        <div class="container information-panel col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="container social-media col-md-2 col-lg-2 col-md-offset-5 col-lg-offset-5">
+            <h1>Contact:</h1>
+             <p>ECL Inc. © Copyright 2018. All Rights Reserved.</p>
+            <a href="https://www.facebook.com/grzesio.kochanowicz" ><img src="/static/images/facebook.png" alt="facebook"></a>
+        </div>
+        <div class="container contact col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1">
+            <h3>Grzegorz Kochanowicz</h3>
+            <p>E-mail: <a href="mailto:nelos@omar.pl">nelos@omar.pl</a></p>
+            <p>Phone: (+048) 504 067 486</p>
+            <p>Adress: Wierzbięcice 66/9, 61-548 Poznań</p>
+        </div>
+    </div>
+    <script src="{% static "js/jquery-3.3.1.min.js" %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>

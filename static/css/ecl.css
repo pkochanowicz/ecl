@@ -1,0 +1,64 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5{
+    text-align: center;
+}
+#logo {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid black;
+}
+.catchy-phrase{
+    margin-top: 4em;
+    margin-bottom: 6em;
+}
+.information-panel{
+    background-color: lightgray;
+    border-bottom: 3px solid black;
+    border-top: 1px solid black;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.main-page-article {
+    height: 38em;
+    width: 21em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    background-color: white;
+}
+.articles {
+    margin-bottom: 2em;
+}
+.main-page-article img{
+    border-radius: 50%;
+    width:8em;
+    height: 8em;
+    border: 2px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+.main-page-article .article-biography{
+    margin-bottom: 1em;
+    text-align: center;
+    padding: 1em;
+}
+.contact p, .contact h3{
+    text-align: right;
+}
+.social-media img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 3em;
+}
+.social-media p{
+    font-size: 0.6em;
+}
+.centered {
+    text-align: center;
+}

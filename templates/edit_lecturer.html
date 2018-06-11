@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h1>Lecturer {{ lecturer.name }}</h1>
+<form method="post" action="">
+    {%  csrf_token %}
+    <label>Name:</label>
+    <input type="text" name="title" value="{{ lecturer.name }}"/><br>
+      <label>Biography:</label>
+    <input type="textarea" name="year" value="{{ lecturer.biography }}"/><br>
+      <label>Picture:</label>
+    <input type="text" name="rate"/>  <img src="{{ lecturer.picture.url }}" width=100em" height="100em" ><br>
+</select>
+<input type="submit" value="Save" />
+</form>
+{% endblock %}

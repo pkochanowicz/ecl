@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="catchy-phrase col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3>"Obstacles are those frightful things you see when you take your eyes off your goal." </h3>
+        <h5>Henry Ford</h5>
+    </div>
+    <div class="container information-panel col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h1>Partnership information</h1><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sem libero, lobortis nec
+            ipsum nec, lobortis varius dui. Donec consequat dapibus sapien, vitae rhoncus ex vulputate
+            non. Donec consectetur nisi eget felis laoreet mattis. Curabitur placerat quis libero eu
+            consequat. Praesent quis efficitur ligula. Aliquam iaculis, metus sed fringilla consectetur,
+            quam magna tincidunt turpis, eu faucibus diam quam nec diam. Duis fermentum sed felis vel
+            commodo.</p>
+        <p>Etiam id est vel velit sollicitudin sagittis. Aliquam id commodo lacus. Morbi eget risus ac
+            turpis volutpat tristique. Aliquam iaculis est nec fringilla hendrerit. In tristique mauris
+            eget libero porta congue. Donec suscipit malesuada nisl eget tempor. Aenean dui nunc, malesuada
+            fermentum ante eu, sodales luctus velit. Donec ultricies elementum dolor a suscipit. Aenean
+            interdum tellus ac luctus tempus. Duis sapien velit, vestibulum nec maximus quis, ullamcorper
+            quis nulla.</p>
+        <p>Phasellus ligula felis, consequat nec est eu, lobortis pretium nunc. Nulla pharetra velit vitae
+            velit pretium, a fermentum orci facilisis. Sed et varius libero. Fusce consequat ultrices erat
+            ac facilisis. Praesent non tortor egestas nisl aliquam rhoncus sit amet rutrum turpis. Morbi ut
+            tellus consequat eros ullamcorper posuere id maximus ante. Maecenas et gravida dui, at aliquam
+            dolor. Donec nec tincidunt libero, non placerat turpis. Sed malesuada dui vel nulla hendrerit,
+            eget varius lorem sagittis. Aenean pulvinar vitae purus eget iaculis.</p><br>
+    </div>
+    <h1>Our teachers:</h1><br>
+    <div class="container articles centered col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12">
+        {% for lecturer in lecturers %}
+            <article class="main-page-article col-sm-2 col-md-2 col-lg-2 col-lg-2">
+            <img src="{{ lecturer.picture.url }}">
+                <h3><b>{{ lecturer.name }}:</b></h3> <div class="article-biography">{{ lecturer.biography }}</div>
+            </article>
+        {% endfor %}
+    </div>
+{% endblock %}

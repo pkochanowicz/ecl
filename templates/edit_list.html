@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h1>Lecturers:</h1>
+    <div class ="container"></div>
+    {% for lecturer in lecturers %}
+            {{ lecturer.name }} - {{ lecturer.biography }}
+            <img src="{{ lecturer.picture.url }}" width=150em" height="150em" >
+        <a href='/delete_lecturer/{{ lecturer.pk }}'>Delete</a>
+        <br>
+    {% endfor %}
+    <br>
+    <a href='/add_lecturer/'>Add a lecturer</a>
+{% endblock %}
